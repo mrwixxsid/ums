@@ -1,0 +1,1 @@
+ALTER TABLE public.batches ADD COLUMN admission_session text NOT NULL DEFAULT 'January';

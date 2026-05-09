@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Luxury Academic — Deep Navy + Warm Gold */
+    --background: 40 20% 97%;
+    --foreground: 222 60% 11%;
+
+    --card: 40 15% 99%;
+    --card-foreground: 222 60% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 60% 11%;
+
+    /* Deep navy primary */
+    --primary: 222 60% 14%;
+    --primary-foreground: 45 30% 95%;
+
+    --secondary: 40 20% 93%;
+    --secondary-foreground: 222 60% 11%;
+
+    --muted: 40 15% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 40 20% 93%;
+    --accent-foreground: 222 60% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 45 93% 47%;
+
+    --radius: 0.5rem;
+
+    /* Gold accent */
+    --gold: 45 93% 47%;
+    --gold-foreground: 222 60% 11%;
+    --gold-muted: 45 40% 90%;
+
+    /* Status colors */
+    --success: 142 72% 29%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Sidebar — dark navy */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 221 40% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 221 40% 16%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 15%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 45 93% 47%;
+    --gold: 45 93% 55%;
+    --gold-foreground: 222 60% 11%;
+    --gold-muted: 45 30% 25%;
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 10%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 12%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  .section-warm {
+    background-color: hsl(40 20% 96%);
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(45 93% 47%), hsl(38 92% 55%));
+  }
+  .navy-gradient {
+    background: linear-gradient(135deg, hsl(222 60% 14%), hsl(222 55% 22%));
+  }
+}
